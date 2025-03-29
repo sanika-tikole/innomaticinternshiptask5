@@ -1,0 +1,125 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.add-todo-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-todo-form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-todo-form button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-item {
+  background: #f9f9f9;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.app-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  transition: background 0.3s;
+}
+
+.dark {
+  background-color: #222;
+  color: white;
+}
+
+.dark .app-container {
+  background: #333;
+}
+
+.todo-item {
+  background: #f9f9f9;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-item.pinned {
+  background: #ffef96;
+  font-weight: bold;
+}
+
+.due-date {
+  font-size: 0.8rem;
+  color: red;
+}
+
+.dark-mode-toggle {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
